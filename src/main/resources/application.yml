@@ -1,0 +1,60 @@
+initializr:
+  description:
+    description: Project description
+    title: Description
+    value: patkub's SpringBoot OAuth2 Starter
+  group-id:
+    value: org.example
+    description: Group id
+    title: Group id
+  artifact-id:
+    description: Artifact Id of the project
+    title: Artifact Id
+    value: sample-oauth2
+  version:
+    description: Project version
+    title: Version
+    value: 0-SNAPSHOT
+  types:
+    - name: Gradle Project
+      id: gradle-project
+      description: Generate a Gradle based project archive
+      tags:
+        build: gradle
+        format: project
+      default: false
+      action: /starter.zip
+  packagings:
+    - name: Jar
+      id: jar
+      default: true
+  languages:
+    - name: Java
+      id: java
+      default: true
+  java-versions:
+    - id: 21
+      default: true
+  boot-versions:
+    - name: 3.3.5.RELEASE
+      id: 3.3.5
+      default: true
+  dependencies:
+    # Spring Boot Starter Web
+    # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    - name: Web
+      content:
+        - name: Web
+          id: web
+          description: Full-stack web development with Tomcat and Spring MVC
+    # Spring Boot Starter OAuth2 Client
+    # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-client
+    - name: OAuth2 Client
+      content:
+        - name: OAuth2 Client
+          id: oauth2-client
+          description: Starter for using Spring Security's OAuth2/OpenID Connect client features
+
+spring:
+  application:
+    name: demo
