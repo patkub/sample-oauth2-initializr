@@ -3,7 +3,7 @@
 ## WIP
 
 Playing around with customizing Spring Initializr. This is very early work-in-progress.
-All it does so far is create a `src/main/resources/static/custom/someCustomFile.txt` file.
+All it does so far is create a `src/main/resources/static/custom/fileWithContent2.txt` file.
 
 TODO:
  - [ ] Customize `ResourceFileContributor` to create necessary files for an OAuth2 application
