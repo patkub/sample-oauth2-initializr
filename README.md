@@ -6,8 +6,8 @@ Playing around with customizing Spring Initializr. This is very early work-in-pr
 All it does so far is create a `src/main/resources/static/custom/fileWithContent2.txt` file.
 
 TODO:
+ - [x] Process files as mustache templates
  - [ ] Customize `ProjectFileContributor` to create necessary files for an OAuth2 application
- - [ ] Process files as mustache templates
  - [ ] Figure out how to set package path
 
 
